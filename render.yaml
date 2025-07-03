@@ -1,9 +1,9 @@
 services:
 - type: pserv
-  repo: https://github.com/livekit-examples/agent-deployment
+  repo: https://github.com/Hari13-12/Voice-agent.git
 
   # Change this to the path containing your Dockerfile
-  rootDir: python-agent-example-app
+  rootDir: RuTx-Render
 
   name: agent-example
   runtime: docker
@@ -14,7 +14,7 @@ services:
   # Environment variables are stored in a group
   # created in the Render dashboard.
   envVars:
-  - fromGroup: agent-example-env 
+  - fromGroup: Visits-voice-agent
   region: virginia
 
   # 300s is the standard allowed maximum. Talk to render.com support if you need this increased.
