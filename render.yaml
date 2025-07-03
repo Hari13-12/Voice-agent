@@ -28,7 +28,6 @@
 #     targetMemoryPercent: 60
 # version: "1"
 
-
 services:
   - type: web
     name: agent-example
@@ -39,10 +38,4 @@ services:
     envVars:
       - fromGroup: Visits-voice-agent
     region: virginia
-    maxShutdownDelaySeconds: 300
-    scaling:
-      minInstances: 1
-      maxInstances: 1  # Free plan allows only 1 instance
-      targetCPUPercent: 60
-      targetMemoryPercent: 60
 version: "1"
