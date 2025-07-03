@@ -1,0 +1,5 @@
+langchain-google-genai
+python-dotenv
+livekit-plugins-google
+livekit-agents[openai,turn-detector]~=1.0 
+livekit-plugins-noise-cancellation~=0.2 
