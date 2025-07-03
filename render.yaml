@@ -30,7 +30,7 @@
 
 services:
   - type: web
-    name: agent-example
+    name: visit-agent-livekit
     repo: https://github.com/Hari13-12/Voice-agent.git
     rootDir: RuTx-render
     runtime: docker
