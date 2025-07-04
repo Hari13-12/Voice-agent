@@ -16,5 +16,9 @@ COPY . .
 # Set environment variables (optional, e.g., for unbuffered output)
 ENV PYTHONUNBUFFERED=1
 
+# ensure that any dependent models are downloaded at build-time
+RUN python main.py download-files
+
+
 # Default command to run the agent
 CMD ["python", "agent.py", "start"] 
