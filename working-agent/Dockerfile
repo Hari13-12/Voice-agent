@@ -16,7 +16,6 @@ COPY . .
 # Set environment variables (optional, e.g., for unbuffered output)
 ENV PYTHONUNBUFFERED=1
 
-RUN python agent.py download-files
 
 # Default command to run the agent
-CMD ["python", "agent.py", "start"] 
+CMD ["sh", "-c", "python agent.py download-files && python agent.py start"]
