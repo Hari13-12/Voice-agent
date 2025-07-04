@@ -32,7 +32,7 @@ services:
   - type: web
     name: visit-agent-livekit
     repo: https://github.com/Hari13-12/Voice-agent.git
-    rootDir: Voice-agent
+    rootDir: working-agent
     runtime: docker
     plan: free
     envVars:
