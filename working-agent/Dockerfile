@@ -17,7 +17,7 @@ COPY . .
 ENV PYTHONUNBUFFERED=1
 
 # ensure that any dependent models are downloaded at build-time
-RUN python main.py download-files
+RUN python agent.py download-files
 
 
 # Default command to run the agent
