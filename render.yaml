@@ -36,6 +36,6 @@ services:
     runtime: docker
     plan: free
     envVars:
-      - fromGroup: visits-voice-livekit
+      - fromGroup: Visits-voice-livekit
     region: virginia
 version: "1"
