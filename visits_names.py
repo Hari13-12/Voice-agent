@@ -25,7 +25,7 @@ async def visit_details_list(state: State):
         "keyword": "MarketVisit",
         "conditionName": "Planned_Date_Filter",
         "parameters": [
-            {"name": "planneddate", "value": "2025-07-09"},
+            {"name": "planneddate", "value": today},
             {"name": "UserId", "value": user_id},
         
         ]
