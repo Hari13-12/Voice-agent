@@ -4,4 +4,5 @@ class State:
         # self.intent: str = ""
         # self.user_name: str = ""
         self.user_id: str = ""
-        self.response: str = ""
+        # self.response: str = ""
+        self.access_token: str = ""
