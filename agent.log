@@ -1,0 +1,315 @@
+2026-02-28 11:07:32,522 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:07:32,527 - livekit.agents - DEV - Watching D:\Voice-Agents\Final
+2026-02-28 11:07:41,781 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:07:41,795 - livekit.agents - INFO - starting worker
+2026-02-28 11:07:41,798 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:07:41,811 - livekit.agents - INFO - initializing process
+2026-02-28 11:08:08,199 - livekit.agents - INFO - process initialized
+2026-02-28 11:08:08,204 - livekit.agents - INFO - HTTP server listening on :59074
+2026-02-28 11:08:09,886 - livekit.agents - INFO - registered worker
+2026-02-28 11:08:45,507 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:08:45,517 - livekit.agents - INFO - starting worker
+2026-02-28 11:08:45,520 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:08:45,534 - livekit.agents - INFO - initializing process
+2026-02-28 11:08:45,523 - livekit.agents - ERROR - Error in _read_ipc_task
+Traceback (most recent call last):
+  File "D:\Voice-Agents\myenv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\streams.py", line 767, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Voice-Agents\myenv\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Voice-Agents\myenv\Lib\site-packages\livekit\agents\cli\watcher.py", line 135, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Voice-Agents\myenv\Lib\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Voice-Agents\myenv\Lib\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+2026-02-28 11:08:55,918 - livekit.agents - INFO - process initialized
+2026-02-28 11:08:55,921 - livekit.agents - INFO - HTTP server listening on :59104
+2026-02-28 11:08:58,441 - livekit.agents - INFO - registered worker
+2026-02-28 11:13:33,889 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:13:33,900 - livekit.agents - INFO - starting worker
+2026-02-28 11:13:33,903 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:13:33,918 - livekit.agents - INFO - initializing process
+2026-02-28 11:13:47,410 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:13:47,422 - livekit.agents - INFO - starting worker
+2026-02-28 11:13:47,424 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:13:47,438 - livekit.agents - INFO - initializing process
+2026-02-28 11:14:02,764 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:14:02,774 - livekit.agents - INFO - starting worker
+2026-02-28 11:14:02,777 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:14:02,800 - livekit.agents - INFO - initializing process
+2026-02-28 11:14:27,012 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:14:27,022 - livekit.agents - INFO - starting worker
+2026-02-28 11:14:27,025 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:14:27,041 - livekit.agents - INFO - initializing process
+2026-02-28 11:15:17,305 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:15:17,315 - livekit.agents - INFO - starting worker
+2026-02-28 11:15:17,318 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:15:17,349 - livekit.agents - INFO - initializing process
+2026-02-28 11:15:38,872 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:15:38,900 - livekit.agents - INFO - starting worker
+2026-02-28 11:15:38,905 - livekit.agents - INFO - starting inference executor
+2026-02-28 11:15:38,961 - livekit.agents - INFO - initializing process
+2026-02-28 11:16:09,516 - livekit.agents - INFO - process initialized
+2026-02-28 11:16:09,521 - livekit.agents - INFO - HTTP server listening on :60762
+2026-02-28 11:16:11,358 - livekit.agents - INFO - registered worker
+2026-02-28 11:16:16,673 - livekit.agents - INFO - received job request
+2026-02-28 11:16:16,776 - livekit.agents - DEBUG - received assignment
+2026-02-28 11:16:16,781 - livekit.agents - INFO - initializing job runner
+2026-02-28 11:16:16,785 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:16:16,785 - livekit.agents - INFO - job runner initialized
+2026-02-28 11:16:16,796 - __mp_main__ - INFO - Agent starting up
+2026-02-28 11:16:17,732 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 11:16:17,736 - __mp_main__ - INFO - Participant joined: visits-agent
+2026-02-28 11:16:17,740 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 11:16:17,744 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 11:16:17,774 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 11:16:17,779 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 11:16:18,385 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 11:16:18,392 - livekit.agents - DEBUG - input stream attached
+2026-02-28 11:16:19,308 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 11:16:19,322 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:16:19,328 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:16:19,332 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 11:16:19,338 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 11:16:19,921 - livekit.agents - DEBUG - start reading stream
+2026-02-28 11:16:49,064 - livekit.agents - DEBUG - executing tool
+2026-02-28 11:16:49,079 - __mp_main__ - INFO - Fetching visit details
+2026-02-28 11:16:50,255 - __mp_main__ - INFO - Retrieved visit details: ['List is empty']
+2026-02-28 11:16:50,266 - livekit.agents - DEBUG - tools execution completed
+2026-02-28 11:17:33,278 - livekit.agents - DEBUG - stream closed
+2026-02-28 11:17:34,733 - livekit.agents - DEBUG - start reading stream
+2026-02-28 11:18:08,985 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 11:18:08,993 - livekit.agents - DEBUG - stream closed
+2026-02-28 11:18:09,004 - livekit.agents - DEBUG - input stream detached
+2026-02-28 11:18:09,009 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 11:18:09,109 - livekit.agents - DEBUG - session closed
+2026-02-28 11:18:29,265 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 11:18:29,274 - livekit.agents - DEBUG - job exiting
+2026-02-28 11:18:29,286 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 11:18:29,292 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 11:21:28,908 - livekit.agents - INFO - received job request
+2026-02-28 11:21:29,001 - livekit.agents - DEBUG - received assignment
+2026-02-28 11:21:29,010 - livekit.agents - INFO - initializing job runner
+2026-02-28 11:21:29,015 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:21:29,016 - livekit.agents - INFO - job runner initialized
+2026-02-28 11:21:29,030 - __mp_main__ - INFO - Agent starting up
+2026-02-28 11:21:31,254 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 11:21:31,258 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 11:21:31,263 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 11:21:31,270 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 11:21:31,281 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 11:21:31,286 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 11:21:31,446 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 11:21:31,454 - livekit.agents - DEBUG - input stream attached
+2026-02-28 11:21:32,988 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 11:21:33,000 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:21:33,006 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:21:33,011 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 11:21:33,016 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 11:21:33,182 - livekit.agents - DEBUG - start reading stream
+2026-02-28 11:21:45,167 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 11:21:45,174 - livekit.agents - DEBUG - stream closed
+2026-02-28 11:21:45,195 - livekit.agents - DEBUG - input stream detached
+2026-02-28 11:21:45,203 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 11:21:45,485 - livekit.agents - DEBUG - session closed
+2026-02-28 11:22:02,786 - livekit.agents - INFO - received job request
+2026-02-28 11:22:02,889 - livekit.agents - DEBUG - received assignment
+2026-02-28 11:22:02,898 - livekit.agents - INFO - initializing job runner
+2026-02-28 11:22:02,903 - livekit.agents - INFO - job runner initialized
+2026-02-28 11:22:02,904 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 11:22:02,920 - __mp_main__ - INFO - Agent starting up
+2026-02-28 11:22:03,763 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 11:22:03,768 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 11:22:03,773 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 11:22:03,781 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 11:22:03,799 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 11:22:03,805 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 11:22:03,962 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 11:22:03,968 - livekit.agents - DEBUG - input stream attached
+2026-02-28 11:22:05,509 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 11:22:05,519 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:22:05,525 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 11:22:05,531 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 11:22:05,537 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 11:22:05,715 - livekit.agents - DEBUG - start reading stream
+2026-02-28 11:22:06,592 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 11:22:06,603 - livekit.agents - DEBUG - job exiting
+2026-02-28 11:22:06,618 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 11:22:06,624 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 11:22:34,623 - livekit.agents - DEBUG - executing tool
+2026-02-28 11:22:34,630 - __mp_main__ - INFO - Fetching visit details
+2026-02-28 11:22:36,087 - __mp_main__ - INFO - Retrieved visit details: ['List is empty']
+2026-02-28 11:22:36,096 - livekit.agents - DEBUG - tools execution completed
+2026-02-28 11:22:42,764 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 11:22:42,773 - livekit.agents - DEBUG - stream closed
+2026-02-28 11:22:42,787 - livekit.agents - DEBUG - input stream detached
+2026-02-28 11:22:42,794 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 11:22:43,077 - livekit.agents - DEBUG - session closed
+2026-02-28 11:23:04,342 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 11:23:04,354 - livekit.agents - DEBUG - job exiting
+2026-02-28 11:23:04,359 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 11:23:04,364 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 12:40:35,330 - livekit.agents - INFO - received job request
+2026-02-28 12:40:35,381 - livekit.agents - DEBUG - received assignment
+2026-02-28 12:40:35,392 - livekit.agents - INFO - initializing job runner
+2026-02-28 12:40:35,398 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 12:40:35,399 - livekit.agents - INFO - job runner initialized
+2026-02-28 12:40:35,414 - __mp_main__ - INFO - Agent starting up
+2026-02-28 12:40:36,831 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 12:40:36,835 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 12:40:36,839 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 12:40:36,844 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 12:40:36,888 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 12:40:36,892 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 12:40:37,292 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 12:40:37,300 - livekit.agents - DEBUG - input stream attached
+2026-02-28 12:40:39,120 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 12:40:39,131 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 12:40:39,136 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 12:40:39,143 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 12:40:39,149 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 12:40:39,348 - livekit.agents - DEBUG - start reading stream
+2026-02-28 12:40:42,927 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 12:40:42,987 - livekit.agents - DEBUG - stream closed
+2026-02-28 12:40:43,552 - livekit.agents - DEBUG - input stream detached
+2026-02-28 12:40:43,881 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 12:40:44,064 - livekit.agents - DEBUG - session closed
+2026-02-28 12:41:05,551 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 12:41:05,561 - livekit.agents - DEBUG - job exiting
+2026-02-28 12:41:05,573 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 12:41:05,579 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 13:13:25,634 - livekit.agents - INFO - received job request
+2026-02-28 13:13:25,765 - livekit.agents - DEBUG - received assignment
+2026-02-28 13:13:25,775 - livekit.agents - INFO - initializing job runner
+2026-02-28 13:13:25,782 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 13:13:25,783 - livekit.agents - INFO - job runner initialized
+2026-02-28 13:13:25,802 - __mp_main__ - INFO - Agent starting up
+2026-02-28 13:13:27,205 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 13:13:27,210 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 13:13:27,216 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 13:13:27,222 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 13:13:27,233 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 13:13:27,237 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 13:13:27,494 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 13:13:27,502 - livekit.agents - DEBUG - input stream attached
+2026-02-28 13:13:29,144 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 13:13:29,155 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:13:29,161 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:13:29,166 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 13:13:29,170 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 13:13:29,180 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 13:13:31,604 - livekit.agents - DEBUG - input stream detached
+2026-02-28 13:13:31,612 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 13:13:31,709 - livekit.agents - DEBUG - session closed
+2026-02-28 13:13:59,256 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 13:13:59,268 - livekit.agents - DEBUG - job exiting
+2026-02-28 13:13:59,275 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 13:13:59,280 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 13:23:57,363 - livekit.agents - INFO - received job request
+2026-02-28 13:23:57,417 - livekit.agents - DEBUG - received assignment
+2026-02-28 13:23:57,427 - livekit.agents - INFO - initializing job runner
+2026-02-28 13:23:57,433 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 13:23:57,433 - livekit.agents - INFO - job runner initialized
+2026-02-28 13:23:57,448 - __mp_main__ - INFO - Agent starting up
+2026-02-28 13:23:58,245 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 13:23:58,250 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 13:23:58,256 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 13:23:58,263 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 13:23:58,275 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 13:23:58,278 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 13:23:58,459 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 13:23:58,467 - livekit.agents - DEBUG - input stream attached
+2026-02-28 13:24:00,025 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 13:24:00,037 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:24:00,044 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:24:00,052 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 13:24:00,058 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 13:24:00,227 - livekit.agents - DEBUG - start reading stream
+2026-02-28 13:24:08,407 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 13:24:08,415 - livekit.agents - DEBUG - stream closed
+2026-02-28 13:24:08,433 - livekit.agents - DEBUG - input stream detached
+2026-02-28 13:24:08,438 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 13:24:08,528 - livekit.agents - DEBUG - session closed
+2026-02-28 13:24:10,777 - livekit.agents - INFO - received job request
+2026-02-28 13:24:10,859 - livekit.agents - DEBUG - received assignment
+2026-02-28 13:24:10,870 - livekit.agents - INFO - initializing job runner
+2026-02-28 13:24:10,876 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 13:24:10,876 - livekit.agents - INFO - job runner initialized
+2026-02-28 13:24:10,909 - __mp_main__ - INFO - Agent starting up
+2026-02-28 13:24:11,691 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 13:24:11,695 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 13:24:11,700 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 13:24:11,706 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 13:24:11,719 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 13:24:11,723 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 13:24:11,888 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 13:24:11,896 - livekit.agents - DEBUG - input stream attached
+2026-02-28 13:24:13,517 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 13:24:13,527 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:24:13,533 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:24:13,540 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 13:24:13,545 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 13:24:13,719 - livekit.agents - DEBUG - start reading stream
+2026-02-28 13:24:29,213 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 13:24:29,223 - livekit.agents - DEBUG - job exiting
+2026-02-28 13:24:29,246 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 13:24:29,251 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 13:24:36,221 - livekit.agents - DEBUG - executing tool
+2026-02-28 13:24:36,229 - __mp_main__ - INFO - Fetching visit details
+2026-02-28 13:24:37,604 - __mp_main__ - INFO - Retrieved visit details: ['***Jain Retailers', 'Gupta Retailer', '*Sunrise Retail Store', '**The Daily Mart', '**Golden Traders']
+2026-02-28 13:24:37,614 - livekit.agents - DEBUG - tools execution completed
+2026-02-28 13:24:52,958 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 13:24:52,966 - livekit.agents - DEBUG - stream closed
+2026-02-28 13:24:52,980 - livekit.agents - DEBUG - input stream detached
+2026-02-28 13:24:52,987 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 13:24:53,060 - livekit.agents - DEBUG - session closed
+2026-02-28 13:25:15,601 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 13:25:15,614 - livekit.agents - DEBUG - job exiting
+2026-02-28 13:25:15,628 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 13:25:15,632 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2026-02-28 13:25:42,118 - livekit.agents - INFO - received job request
+2026-02-28 13:25:42,190 - livekit.agents - DEBUG - received assignment
+2026-02-28 13:25:42,218 - livekit.agents - INFO - initializing job runner
+2026-02-28 13:25:42,223 - asyncio - DEBUG - Using proactor: IocpProactor
+2026-02-28 13:25:42,224 - livekit.agents - INFO - job runner initialized
+2026-02-28 13:25:42,240 - __mp_main__ - INFO - Agent starting up
+2026-02-28 13:25:43,116 - __mp_main__ - INFO - Connected to LiveKit room
+2026-02-28 13:25:43,120 - __mp_main__ - INFO - Participant joined: 005fK000001oNIbQAM
+2026-02-28 13:25:43,125 - __mp_main__ - INFO - Participant metadata type: <class 'dict'>
+2026-02-28 13:25:43,132 - __mp_main__ - INFO - Initializing assistant for user: 005fK000001oNIbQAM
+2026-02-28 13:25:43,145 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-28 13:25:43,150 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-28 13:25:43,349 - livekit.agents - WARNING - RoomInputOptions and RoomOutputOptions are deprecated, use RoomOptions instead
+2026-02-28 13:25:43,356 - livekit.agents - DEBUG - input stream attached
+2026-02-28 13:25:44,924 - livekit.plugins.google - DEBUG - connecting to Gemini Realtime API...
+2026-02-28 13:25:44,935 - livekit.agents - DEBUG - using audio io: `RoomIO` -> `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:25:44,941 - livekit.agents - DEBUG - using transcript io: `AgentSession` -> `TranscriptSynchronizer` -> `RoomIO`
+2026-02-28 13:25:44,947 - __mp_main__ - INFO - Agent session started successfully
+2026-02-28 13:25:44,952 - livekit.agents - WARNING - the RealtimeModel uses a server-side turn detection, allow_interruptions cannot be False when using VoiceAgent.generate_reply(), disable turn_detection in the RealtimeModel and use VAD on the AgentTask/VoiceAgent instead
+2026-02-28 13:25:45,127 - livekit.agents - DEBUG - start reading stream
+2026-02-28 13:26:08,183 - livekit.agents - DEBUG - executing tool
+2026-02-28 13:26:08,192 - __mp_main__ - INFO - Fetching visit details
+2026-02-28 13:26:09,770 - __mp_main__ - INFO - Retrieved visit details: ['***Jain Retailers', 'Gupta Retailer', '*Sunrise Retail Store', '**The Daily Mart', '**Golden Traders']
+2026-02-28 13:26:09,779 - livekit.agents - DEBUG - tools execution completed
+2026-02-28 13:26:37,473 - livekit.agents - INFO - closing agent session due to participant disconnect (disable via `RoomInputOptions.close_on_disconnect=False`)
+2026-02-28 13:26:37,482 - livekit.agents - DEBUG - stream closed
+2026-02-28 13:26:37,497 - livekit.agents - DEBUG - input stream detached
+2026-02-28 13:26:37,504 - livekit.plugins.google - DEBUG - send task finished.
+2026-02-28 13:26:37,571 - livekit.agents - DEBUG - session closed
+2026-02-28 13:27:01,588 - livekit.agents - DEBUG - shutting down job task
+2026-02-28 13:27:01,599 - livekit.agents - DEBUG - job exiting
+2026-02-28 13:27:01,607 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2026-02-28 13:27:01,613 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
